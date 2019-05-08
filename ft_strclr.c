@@ -1,32 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strclr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/30 17:44:22 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/07 15:08:18 by jetownle         ###   ########.fr       */
+/*   Created: 2019/05/07 16:45:23 by jetownle          #+#    #+#             */
+/*   Updated: 2019/05/07 16:50:19 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* lexicographically compares s1 and s2, returns int < > or == 0 after comparison, basically... returns an ascii value that can be used to alphabatize strings */
-
 #include <libft.h>
 
-int 		ft_strcmp(char *s1, char *s2)
+void 	ft_strclr(char *s)
 {
-	while (*s1 != '\0' && *s2 != '\0')
+	size _t i;
+
+	i = 0;
+	if (s)
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
+		while (s[i])
+		{
+			s[i] = '\0';
+			i++;
+		}
 	}
-	if (*s1 != '\0')
-		return (*s1);
-	if (*s2 != '\0')
-		return (-*s2);
-	return (0);
+	return ;
 }
 

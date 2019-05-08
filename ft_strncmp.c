@@ -1,32 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/30 17:44:22 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/07 15:08:18 by jetownle         ###   ########.fr       */
+/*   Created: 2019/05/07 12:50:59 by jetownle          #+#    #+#             */
+/*   Updated: 2019/05/07 15:24:10 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* lexicographically compares s1 and s2, returns int < > or == 0 after comparison, basically... returns an ascii value that can be used to alphabatize strings */
-
 #include <libft.h>
 
-int 		ft_strcmp(char *s1, char *s2)
+int 	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	while (*s1 != '\0' && *s2 != '\0')
+	size_t i;
+
+	i = 0;
+	
+	if (n == 0)
+		return (0);
+
+	while (*s1[i] != '\0' && *s2[i] != '\0' && i < n)
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
+		if (*s1[i] != *s2[i])
+			return (*s1[i] - *s2[i]);
+		i++;
 	}
-	if (*s1 != '\0')
-		return (*s1);
-	if (*s2 != '\0')
-		return (-*s2);
-	return (0);
+	if (i == n)
+		return (0);
+	return (s1[i] - s2[i]);
 }
 
