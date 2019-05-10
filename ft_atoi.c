@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 21:08:33 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/08 21:38:28 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/09 23:16:21 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int		ft_atoi(char *str)
 	return (res * s);
 }
 
+/*
 int main()
 {
 	printf("ft_atoi: %d\n", ft_atoi("123451635436"));
@@ -50,3 +51,4 @@ int main()
 
     return 0;
 }
+*/
