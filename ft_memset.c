@@ -6,18 +6,16 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 19:59:19 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/01 13:58:15 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/10 22:22:18 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* set memory region to a given value regardless of data type  */
-
 #include <libft.h>
 
-void 	*ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	char *ptr;
-	size_t i;
+	char	*ptr;
+	size_t	i;
 
 	ptr = b;
 	i = 0;
@@ -25,4 +23,3 @@ void 	*ft_memset(void *b, int c, size_t len)
 		ptr[i++] = c;
 	return (b);
 }
-

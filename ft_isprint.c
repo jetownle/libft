@@ -6,14 +6,13 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 11:08:47 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/08 11:10:23 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/10 19:29:09 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int 	ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
-

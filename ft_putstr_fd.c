@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/07 17:54:09 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/07 18:02:41 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/10 22:31:24 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@ void	ft_putstr_fd(char const *s, int fd)
 	int i;
 
 	i = 0;
-	while(s[i] != 0)
+	while (s[i] != 0)
 	{
 		ft_putchar_fd(s[i], fd);
 		i++;
 	}
 }
-

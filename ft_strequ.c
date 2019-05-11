@@ -6,16 +6,15 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 19:31:12 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/09 19:44:22 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/10 22:56:04 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int 	ft_strequ(char const *s1, char const *s2)
+int	ft_strequ(char const *s1, char const *s2)
 {
 	if (!s1 || !s2)
 		return (0);
 	return (ft_strcmp(s1, s2) ? 0 : 1);
 }
-

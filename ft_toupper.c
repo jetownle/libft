@@ -6,16 +6,15 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 11:11:14 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/08 11:12:09 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/11 00:33:29 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int 	ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (ft_islower(c))
 		return (c - 32);
 	return (c);
 }
-

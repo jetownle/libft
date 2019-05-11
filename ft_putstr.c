@@ -6,15 +6,13 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:55:11 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/01 14:00:31 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/10 22:29:35 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* outputs the string s to the standard output */
-
 #include <libft.h>
 
-void 	ft_putstr(char const *s)
+void	ft_putstr(char const *s)
 {
 	int i;
 
@@ -25,4 +23,3 @@ void 	ft_putstr(char const *s)
 		i++;
 	}
 }
-

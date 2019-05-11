@@ -6,14 +6,13 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 10:59:24 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/08 11:00:18 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/10 19:26:02 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int 	ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }
-

@@ -6,19 +6,19 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 00:59:20 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/10 01:20:43 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/11 00:22:59 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char 	**ft_strsplit(char const *s, char c)
+char	**ft_strsplit(char const *s, char c)
 {
-	size_t i;
-	size_t d;
-	int start;
-	int end;
-	char **tab;
+	size_t	i;
+	size_t	d;
+	int		start;
+	int		end;
+	char	**tab;
 
 	tab = NULL;
 	i = 0;
@@ -27,7 +27,7 @@ char 	**ft_strsplit(char const *s, char c)
 	{
 		while (s[i] != '\0')
 		{
-			while (s[i] && s[i] ==c)
+			while (s[i] && s[i] == c)
 				i++;
 			start = i;
 			while (s[i] && s[i] != c)
@@ -40,4 +40,3 @@ char 	**ft_strsplit(char const *s, char c)
 	tab[d] = NULL;
 	return (tab);
 }
-

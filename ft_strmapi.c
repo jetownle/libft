@@ -6,19 +6,18 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 18:43:45 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/09 19:28:28 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/10 23:13:13 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char 	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	size_t i;
-	char *fresh;
+	size_t	i;
+	char	*fresh;
 
 	i = 0;
-
 	if (!s || !f)
 		return (NULL);
 	fresh = ft_strnew(ft_strlen(s));
@@ -29,4 +28,3 @@ char 	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (fresh);
 }
-

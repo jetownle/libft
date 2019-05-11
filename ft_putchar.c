@@ -6,16 +6,13 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:53:52 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/01 13:59:48 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/10 22:23:06 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/* outputs the character c to the standard output */
-
 #include <libft.h>
 
-void 	ft_putchar(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
-
