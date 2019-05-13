@@ -6,13 +6,13 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 19:16:31 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/10 22:35:35 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/12 22:32:56 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char	*ft_strcat(char *restrict s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
 	int i;
 	int j;
