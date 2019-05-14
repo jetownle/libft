@@ -6,16 +6,16 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 21:07:49 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/12 23:04:43 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/12 23:37:57 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-#define LIBFT_H
+# define LIBFT_H
 
-#include <unistd.h>
-#include <string.h>
-#include <stdlib.h>
+# include <unistd.h>
+# include <string.h>
+# include <stdlib.h>
 
 typedef struct		s_list
 {
@@ -98,8 +98,7 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 /*
  ** Personal functions
 */
-
-int 				ft_islower(int c);
+int					ft_islower(int c);
 int					ft_isupper(int c);
 char				ft_strndup(const char *s1, size_t n);
 
