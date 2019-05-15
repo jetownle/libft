@@ -1,35 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_intlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/30 17:44:22 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:03:53 by jetownle         ###   ########.fr       */
+/*   Created: 2019/05/14 00:45:07 by jetownle          #+#    #+#             */
+/*   Updated: 2019/05/14 00:48:18 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-/*
-** lexicographically compares s1 and s2, returns int < > or == 0 after
-** comparison, basically... returns an ascii value that can be used
-** to alphabatize strings
-*/
-
-int	ft_strcmp(char *s1, char *s2)
+int		ft_intlen(int n)
 {
-	while (*s1 != '\0' && *s2 != '\0')
+	size_t len;
+	size_t nbr;
+
+	len = 0;
+	if (n < 0)
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
+		nbr = -n;
+		len++;
 	}
-	if (*s1 != '\0')
-		return (*s1);
-	if (*s2 != '\0')
-		return (-*s2);
-	return (0);
+	else
+		nbr = n;
+	if (nbr == 0)
+		return (1);
+	while (nbr != 0)
+	{
+		nbr /= 10;
+		len++;
+	}
+	return (len);
 }

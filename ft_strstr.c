@@ -6,11 +6,18 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 21:14:42 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/11 00:24:44 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 02:05:00 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+/*
+** strstr fnct finds the first occurrence of the substring needle in the string
+** haystack. the terminating null bytes ('\0') are not compared. these functions
+** return a pointer to the beginning of the located substring or NULL if the
+** substring is not found
+*/
 
 char	*ft_strstr(const char *haystack, const char *needle)
 {

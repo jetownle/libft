@@ -6,11 +6,17 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 17:50:54 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/10 23:09:48 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 02:05:38 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+/*
+** Applies the function f to each character of the string given as argument
+** to create a "fresh" new string resulting from the successive applications
+** of f.
+*/
 
 char	*ft_strmap(char const *s, char (*f)(char))
 {

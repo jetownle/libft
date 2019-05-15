@@ -6,11 +6,16 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 19:16:31 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/12 22:32:56 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 01:48:00 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
+
+/*
+** append s2 to s1 and add terminating '\0'. Return s1.
+** if s1 < s1 + s2 behaviour is undefined
+*/
 
 char	*ft_strcat(char *s1, const char *s2)
 {

@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 00:59:20 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/11 00:22:59 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/14 01:00:38 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,25 @@
 
 char	**ft_strsplit(char const *s, char c)
 {
-	size_t	i;
-	size_t	d;
-	int		start;
-	int		end;
-	char	**tab;
+	char		**splitstrs;
+	static int	sub;
+	static int	index;
+	int			cpy;
 
-	tab = NULL;
-	i = 0;
-	d = 0;
-	if (s && (tab = (char **)malloc(sizeof(*tab) * (ft_strlen(s) / 2 + 2))))
+	if (!s || !(splitstrs = (char **)malloc(sizeof(char *) * \
+		ft_findsubstrs(s, c) + 1)))
+		return (NULL);
+	while (index < ft_findsubstrs(s, c))
 	{
-		while (s[i] != '\0')
-		{
-			while (s[i] && s[i] == c)
-				i++;
-			start = i;
-			while (s[i] && s[i] != c)
-				i++;
-			end = i;
-			if (end > start)
-				tab[d++] = ft_strsub(s, start, (end - start));
-		}
+		cpy = 0;
+		if (!(splitstrs[index] = ft_strnew(ft_findsubstrlen(&s[sub], c))))
+			return (NULL);
+		while (s[sub] == c)
+			sub++;
+		while (s[sub] && s[sub] != c)
+			splitstrs[index][cpy++] = s[sub++];
+		index++;
 	}
-	tab[d] = NULL;
-	return (tab);
+	splitstrs[index] = 0;
+	return (splitstrs);
 }

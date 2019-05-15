@@ -1,35 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_lstadd.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/30 17:44:22 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:03:53 by jetownle         ###   ########.fr       */
+/*   Created: 2019/05/15 00:26:36 by jetownle          #+#    #+#             */
+/*   Updated: 2019/05/15 01:41:21 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
 /*
-** lexicographically compares s1 and s2, returns int < > or == 0 after
-** comparison, basically... returns an ascii value that can be used
-** to alphabatize strings
+** Adds the element new at the beginning of the list
 */
 
-int	ft_strcmp(char *s1, char *s2)
+void	ft_lstadd(t_list **alst, t_list *new)
 {
-	while (*s1 != '\0' && *s2 != '\0')
-	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
-	}
-	if (*s1 != '\0')
-		return (*s1);
-	if (*s2 != '\0')
-		return (-*s2);
-	return (0);
+	new->next = *alst;
+	*alst = new;
 }

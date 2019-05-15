@@ -1,35 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_findsubstrs.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/30 17:44:22 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:03:53 by jetownle         ###   ########.fr       */
+/*   Created: 2019/05/14 01:01:19 by jetownle          #+#    #+#             */
+/*   Updated: 2019/05/14 01:04:03 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-/*
-** lexicographically compares s1 and s2, returns int < > or == 0 after
-** comparison, basically... returns an ascii value that can be used
-** to alphabatize strings
-*/
-
-int	ft_strcmp(char *s1, char *s2)
+int		ft_findsubstrs(char const *str, char c)
 {
-	while (*s1 != '\0' && *s2 != '\0')
+	int i;
+	int count;
+
+	i = 0;
+	count = 0;
+	while (str[i])
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
+		while (str[i] && str[i] == c)
+			i++;
+		if (str[i] && str[i] != c)
+			count++;
+		while (str[i] && str[i] != c)
+			i++;
 	}
-	if (*s1 != '\0')
-		return (*s1);
-	if (*s2 != '\0')
-		return (-*s2);
-	return (0);
+	return (count);
 }

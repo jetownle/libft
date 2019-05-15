@@ -6,7 +6,7 @@
 #    By: jetownle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/13 20:49:38 by jetownle          #+#    #+#              #
-#    Updated: 2019/05/13 23:06:06 by jetownle         ###   ########.fr        #
+#    Updated: 2019/05/14 01:13:29 by jetownle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,8 @@ PART2 = ft_memalloc.c ft_memdel.c ft_strnew.c ft_strdel.c ft_strclr.c \
 BONUS = ft_lstnew.c ft_lstdelone.c ft_lstdel.c ft_lstadd.c ft_lstiter.c \
 		  ft_lstmap.c
 
-EXTRA = ft_isupper.c ft_islower.c ft_strndup.c
+EXTRA = ft_isupper.c ft_islower.c ft_strndup.c ft_intlen.c ft_findsubstrs.c \
+		ft_findsubstrlen.c
 
 HDRS = libft.h
 

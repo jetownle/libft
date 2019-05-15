@@ -1,35 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcmp.c                                        :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/30 17:44:22 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:03:53 by jetownle         ###   ########.fr       */
+/*   Created: 2019/05/14 00:48:33 by jetownle          #+#    #+#             */
+/*   Updated: 2019/05/15 02:14:25 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-/*
-** lexicographically compares s1 and s2, returns int < > or == 0 after
-** comparison, basically... returns an ascii value that can be used
-** to alphabatize strings
-*/
-
-int	ft_strcmp(char *s1, char *s2)
+char	*ft_itoa(int n)
 {
-	while (*s1 != '\0' && *s2 != '\0')
+	size_t	i;
+	size_t	nbr;
+	char	*res;
+
+	if (n == 0)
+		return (ft_strdup("0"));
+	i = ft_intlen(n);
+	if (!(res = ft_strnew(i)))
+		return (NULL);
+	if (n < 0)
+		res[0] = '-';
+	nbr = (n < 0) ? -n : n;
+	i--;
+	while (nbr != 0)
 	{
-		if (*s1 != *s2)
-			return (*s1 - *s2);
-		s1++;
-		s2++;
+		res[i] = nbr % 10 + '0';
+		nbr /= 10;
+		i--;
 	}
-	if (*s1 != '\0')
-		return (*s1);
-	if (*s2 != '\0')
-		return (-*s2);
-	return (0);
+	return (res);
 }
