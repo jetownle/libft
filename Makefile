@@ -6,7 +6,7 @@
 #    By: jetownle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/13 20:49:38 by jetownle          #+#    #+#              #
-#    Updated: 2019/05/15 03:09:00 by jetownle         ###   ########.fr        #
+#    Updated: 2019/05/15 18:39:47 by jetownle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ $(NAME):
 
 clean:
 	rm -rf *.o
+	rm -rf libft.h.gch
 
 fclean: clean
 	rm -rf libft.a
