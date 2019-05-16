@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/07 16:45:23 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/10 22:42:37 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:50:13 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_strclr(char *s)
 {

@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 23:53:19 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:01:37 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:55:02 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 /*
 ** allocates with malloc(), and returns a copy of the string given as argument

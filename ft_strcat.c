@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 19:16:31 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 01:48:00 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:49:44 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 /*
 ** append s2 to s1 and add terminating '\0'. Return s1.

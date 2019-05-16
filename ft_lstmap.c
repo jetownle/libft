@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/15 01:25:38 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 01:40:56 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:45:34 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 /*
 ** Iterates a list lst and applies the function f toe ach link to

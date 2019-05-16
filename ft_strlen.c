@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:40:59 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/12 22:46:09 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:52:25 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_strlen(char *str)
 {

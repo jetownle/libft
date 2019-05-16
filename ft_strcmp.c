@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:44:22 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:03:53 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:50:28 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 /*
 ** lexicographically compares s1 and s2, returns int < > or == 0 after

@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/14 01:01:19 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/14 01:04:03 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:41:52 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_findsubstrs(char const *str, char c)
 {

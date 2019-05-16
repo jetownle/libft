@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 21:14:42 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:05:00 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:54:40 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 /*
 ** strstr fnct finds the first occurrence of the substring needle in the string

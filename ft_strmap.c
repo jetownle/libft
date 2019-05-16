@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 17:50:54 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:05:38 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 17:21:12 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 /*
 ** Applies the function f to each character of the string given as argument
@@ -26,7 +26,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	i = 0;
 	if (!s || !f)
 		return (NULL);
-	fresh = ft_strnew(ft_strlen(s));
+	fresh = ft_strnew(ft_strlen((char *)s));
 	while (s[i] != '\0')
 	{
 		fresh[i] = (*f)(s[i]);

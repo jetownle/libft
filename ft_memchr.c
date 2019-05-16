@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 11:32:32 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 01:45:19 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:56:37 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 /*
 ** locates the first occurence of c (converted to an unsigned char)

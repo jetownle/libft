@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 21:07:49 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/14 01:10:00 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 17:26:47 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -100,7 +100,7 @@ t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 */
 int					ft_islower(int c);
 int					ft_isupper(int c);
-char				ft_strndup(const char *s1, size_t n);
+char				*ft_strndup(const char *s1, size_t n);
 int					ft_intlen(int n);
 int					ft_findsubstrs(char const *str, char c);
 int					ft_findsubstrlen(char const *str, char c);

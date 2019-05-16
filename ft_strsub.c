@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 20:07:36 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 02:06:28 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:54:51 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 /*
 ** allocates with malloc and returns a fresh substring from the string given as

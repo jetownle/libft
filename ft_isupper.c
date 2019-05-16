@@ -6,11 +6,11 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 10:43:43 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/10 19:31:20 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/15 16:43:49 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_isupper(int c)
 {
