@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/07 19:16:21 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 16:48:44 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/16 23:49:49 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
+	if (n == -2147483647)
+		return (ft_putstr_fd("-2147483648", fd));
 	if (n < 0)
 	{
 		ft_putchar_fd('-', fd);

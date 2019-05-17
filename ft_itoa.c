@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/14 00:48:33 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 16:44:01 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/16 23:11:44 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ char	*ft_itoa(int n)
 
 	if (n == 0)
 		return (ft_strdup("0"));
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
 	i = ft_intlen(n);
 	if (!(res = ft_strnew(i)))
 		return (NULL);

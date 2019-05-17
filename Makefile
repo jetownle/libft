@@ -6,7 +6,7 @@
 #    By: jetownle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/13 20:49:38 by jetownle          #+#    #+#              #
-#    Updated: 2019/05/15 23:19:34 by jetownle         ###   ########.fr        #
+#    Updated: 2019/05/15 23:54:05 by jetownle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,14 +33,14 @@
 
  HDRS = libft.h
 
- FILES = $(PART1) $(PART2) $(BONUS) $(EXTRA) $(HDRS)
+ FILES = $(PART1) $(PART2) $(BONUS) $(EXTRA)
 
 .PHONY: all clean fclean re
 
 all: $(NAME)
 
 $(NAME):
-	gcc -c -Wall -Wextra -Werror -I $(FILES)
+	gcc -Wall -Wextra -Werror -I $(HDRS) -c $(FILES)
 	ar -r libft.a *.o
 	ranlib libft.a
 
