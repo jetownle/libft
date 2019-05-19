@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 20:07:36 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 16:54:51 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/18 19:11:39 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ char	*ft_strsub(char const *s, unsigned int start, size_t len)
 
 	if (!s)
 		return (0);
-	sub = ft_memalloc(len + 1);
+	if (!(sub = ft_memalloc(len + 1)))
+		return (0);
 	sub = ft_strncpy(sub, (s + start), len);
 	return (sub);
 }
