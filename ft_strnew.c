@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 12:30:05 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/18 19:00:34 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/18 21:07:09 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,6 @@ char	*ft_strnew(size_t size)
 	char	*str;
 
 	if (!(str = (char*)malloc((size + 1) * sizeof(char))))
-		return (0);
-	if (str == NULL)
 		return (NULL);
 	ft_memset(str, '\0', size + 1);
 	return (str);
