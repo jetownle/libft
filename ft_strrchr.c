@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 15:12:02 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 16:54:19 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/20 23:20:06 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 	int		i;
 
 	str = (char *)s;
-	i = (int)ft_strlen(str) + 1;
+	i = (int)ft_strlen(str);
 	while (i > -1)
 	{
 		if (str[i] == (char)c)
