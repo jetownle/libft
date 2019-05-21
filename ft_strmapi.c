@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 18:43:45 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 17:22:08 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/20 20:39:05 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	fresh = ft_strnew(ft_strlen((char *)s));
+	if (!fresh)
+		return (NULL);
 	while (s[i] != '\0')
 	{
 		fresh[i] = (*f)(i, s[i]);
