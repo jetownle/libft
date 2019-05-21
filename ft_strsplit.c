@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 00:59:20 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 16:54:30 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/21 01:21:29 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ char	**ft_strsplit(char const *s, char c)
 	static int	index;
 	int			cpy;
 
+	index = 0;
 	if (!s || !(splitstrs = (char **)malloc(sizeof(char *) * \
 		ft_findsubstrs(s, c) + 1)))
 		return (NULL);
@@ -33,6 +34,6 @@ char	**ft_strsplit(char const *s, char c)
 			splitstrs[index][cpy++] = s[sub++];
 		index++;
 	}
-	splitstrs[index] = 0;
+	splitstrs[index] = NULL;
 	return (splitstrs);
 }
