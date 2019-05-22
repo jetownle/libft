@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 17:44:22 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/22 01:56:01 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/22 02:02:42 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,6 @@ int	ft_strcmp(char *s1, char *s2)
 	if (*s1 != '\0')
 		return ((unsigned char)*s1);
 	if (*s2 != '\0')
-		return ((unsigned char)*s2);
+		return ((unsigned char)-*s2);
 	return (0);
 }
