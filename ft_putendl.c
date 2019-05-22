@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/07 17:47:53 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/15 16:48:01 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/05/22 01:02:11 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,9 @@
 
 void	ft_putendl(char const *s)
 {
-	ft_putstr(s);
-	ft_putchar('\n');
+	if (*s)
+	{
+		ft_putstr(s);
+		ft_putchar('\n');
+	}
 }
