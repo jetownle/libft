@@ -1,36 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_copyuntil.c                                     :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/05/27 23:26:40 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/27 23:49:10 by jetownle         ###   ########.fr       */
+/*   Created: 2019/05/25 00:03:41 by jetownle          #+#    #+#             */
+/*   Updated: 2019/06/20 20:25:52 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
+# include "libft.h"
+# include <stdlib.h>
+# include <unistd.h>
 
-int	ft_copyuntil(char **dst, char *src, char c)
-{
-	int	i;
-	int	count;
-	int pos;
+# define BUFF_SIZE 42
 
-	i = -1;
-	count = 0;
-	while (src[++i])
-		if (src[i] == c)
-			break ;
-	pos = i;
-	if (!(*dst = ft_strnew(i)))
-		return (0);
-	while (src[count] && count < i)
-	{
-		if (!(*dst = ft_strjoinch(*dst, src[count])))
-			return (0);
-		count++;
-	}
-	return (pos);
-}
+int	get_next_line(const int fd, char **line);
+#endif

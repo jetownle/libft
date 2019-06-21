@@ -6,7 +6,7 @@
 #    By: jetownle <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/13 20:49:38 by jetownle          #+#    #+#              #
-#    Updated: 2019/05/28 20:02:30 by jetownle         ###   ########.fr        #
+#    Updated: 2019/06/20 20:21:02 by jetownle         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,9 +29,9 @@
            ft_lstmap.c
 
  EXTRA = ft_isupper.c ft_islower.c ft_strndup.c ft_intlen.c ft_findsubstrs.c \
-         ft_findsubstrlen.c ft_copyuntil.c ft_strjoinch.c
+         ft_findsubstrlen.c get_next_line.c
 
- HDRS = libft.h
+ HDRS = libft.h get_next_line.h
 
  FILES = $(PART1) $(PART2) $(BONUS) $(EXTRA)
 
@@ -52,3 +52,8 @@ fclean: clean
 	rm -rf libft.a
 
 re: fclean all
+
+debug:
+	gcc -Wall -Wextra -Werror -g -I $(HDRS) -c $(FILES)
+	ar -r libft.a *.o
+	ranlib libft.a

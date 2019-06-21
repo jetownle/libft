@@ -6,7 +6,7 @@
 /*   By: jetownle <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/12 21:07:49 by jetownle          #+#    #+#             */
-/*   Updated: 2019/05/28 20:20:47 by jetownle         ###   ########.fr       */
+/*   Updated: 2019/06/20 20:24:51 by jetownle         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -104,7 +104,6 @@ char				*ft_strndup(const char *s1, size_t n);
 int					ft_intlen(int n);
 int					ft_findsubstrs(char const *str, char c);
 int					ft_findsubstrlen(char const *str, char c);
-int					ft_copyuntil(char **dst, char *src, char c);
-char				*ft_strjoinch(char const *s1, char c);
+int					get_next_line(const int fd, char **line);
 
 #endif
